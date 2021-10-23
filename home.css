@@ -26,6 +26,11 @@
     --accentreddark:#f6414195;
     --grey: #999;
     --white: #ffffff;
+    --facebook:#4267b2;
+    --twitter:#1da1f2;
+    --linkedin:#0e76a8;
+    --youtube:#ff0000;
+    --instagram:#bc2a8d;
 }
 
 /* universal css classes */
@@ -94,11 +99,12 @@
         color: white;
         background-color: var(--accentreddark);
         padding: 5px 20px;
-        border-radius: 10px;
+        border-radius: 10px;    
     }
 
     .button a:hover{
         background-color: var(--accentred);
+        transition-duration: 0.6s;
     }
 
     .socialicons{
@@ -108,6 +114,27 @@
     .socialicons img{
         height: 20px;
         margin-top: 20px;
+        opacity: 60%;
+    }
+
+    .socialicons img:hover{
+        opacity: 100%;
+    }
+
+    .socialicons #facebook:hover{
+        filter: drop-shadow(0 0 10px var(--facebook));
+    }
+    .socialicons #twitter:hover{
+        filter: drop-shadow(0 0 10px var(--twitter));
+    }
+    .socialicons #linkedin:hover{
+        filter: drop-shadow(0 0 10px var(--linkedin));
+    }
+    .socialicons #youtube:hover{
+        filter: drop-shadow(0 0 10px var(--youtube));
+    }
+    .socialicons #instagram:hover{
+        filter: drop-shadow(0 0 10px var(--instagram));
     }
 
     .verticalline{
@@ -474,6 +501,7 @@
 
     form button:hover{
         background-color: var(--accentred);
+        transition-duration: 0.6s;
     }
 
     #qrcode{

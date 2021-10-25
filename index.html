@@ -6,11 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+    <script>  
+       $(window).on('load', function () {  
+           $(".loader-wrapper").fadeOut("fast");  
+      });  
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- loading animation -->
+
+    <div class="loader-wrapper">
+        <div class="loader1"><span></span></div>
+        <div class="loader2"><span></span></div>
+        <div class="loader3"><span></span></div>
+        <div class="loader4"><span></span></div>
+    </div>
+
     <!-- navbar -->
 
         <nav id="navbar">
@@ -201,5 +217,6 @@
             </footer>
             <br>
         </div>
+
 </body>
 </html>

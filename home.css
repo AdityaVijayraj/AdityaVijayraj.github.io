@@ -22,6 +22,7 @@
 :root{
     --bluebg: #202430;
     --bluebglight: #232734;
+    --accentredtransparent:#f6414100;
     --accentred: #f64142;
     --accentreddark:#f6414195;
     --grey: #999;
@@ -144,6 +145,42 @@
         z-index: 100;
     }
 
+/* loading animation */
+
+    .loader-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bluebg);
+        z-index: 200;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns:44vw 3vw 1.5vw 3vw 1.5vw 3vw 44vw;
+        grid-template-rows: 20vw 3vw 1.5vw 5vw 20vw;
+    }
+
+    .loader1,
+    .loader2,
+    .loader3,
+    .loader4{
+        /* border: 1px solid var(--accentred); */
+        animation: loading 3s infinite ease-in-out;
+    }
+
+    .loader1{ border-radius: 1.5vw 0vw 1.5vw 1.5vw; height: 3vw; grid-row-start:2 ; grid-column-start: 2; animation-delay:0.1s; }
+    .loader2{ border-radius: 1.5vw 1.5vw 0vw 1.5vw; height: 5vw; grid-row-start:4 ; grid-column-start: 2; animation-delay:0.1s; }
+    .loader3{ border-radius: 0vw 1.5vw 0vw 1.5vw; height: 9.5vw; grid-row-start:2 ; grid-column-start: 4; grid-row-end: 5; animation-delay: 0.2s;}
+    .loader4{ border-radius: 0vw 1.5vw 1.5vw 0vw; height: 9.5vw; grid-row-start:2 ; grid-column-start: 6; grid-row-end: 5; animation-delay: 0.3s ;}
+
+    @keyframes loading{
+        0%  {background-color: var(--accentred);}
+        50% {background-color: var(--accentredtransparent);}
+        100%{background-color: var(--accentred);}
+    }
+
 /* navbar */
 
     nav{
@@ -228,7 +265,6 @@
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
-
     #menuToggle input:checked ~ span:nth-last-child(2){
         transform: rotate(-45deg) translate(0, -1px);
     }
@@ -236,9 +272,8 @@
     #menu{
         position: absolute;
         width: 15vw;
-        margin: -100px 0 0 -100px;
-        padding: 50px;
-        padding-top: 125px;
+        margin: 10px 0 0 -8.7vw;
+        padding: 15px;
         background: transparent;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
@@ -264,7 +299,7 @@
 
     .landingpage{
         grid-area: landingpage;
-        grid-template-rows:41vh 4vh 10vh 4vh 41vh ;
+        grid-template-rows: 41vh 4vh 10vh 4vh 41vh ;
     }
 
     #landingbg{
@@ -357,7 +392,7 @@
         grid-column-start: 2;
         grid-row-start: 2;
         grid-row-end: 6;
-        height: 67vh;
+        width:25vw ;
         margin: auto;
         border-radius: 40px 0px 40px 0px;
     }

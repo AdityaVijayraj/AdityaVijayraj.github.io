@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <!-- main style sheet -->
     <link rel="stylesheet" href="home.css">
+
+    <!-- javascript for loading animation -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
     <script>  
        $(window).on('load', function () {  
            $(".loader-wrapper").fadeOut("fast");  
       });  
     </script>
+
+    <!-- javascript for keeping vertical height constant on phones when using virtual keyboards -->
     <script type="text/javascript">
-        var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1; //&& ua.indexOf("mobile");
+        var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
         if(isAndroid) {
             document.write('<meta name="viewport" content="width=device-width,height='+window.innerHeight+', initial-scale=1.0">');
         }
     </script>
+
+    <!-- custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -32,6 +41,7 @@
         </span>
     </div>
     
+
     <!-- navbar -->
 
         <nav id="navbar">
@@ -52,8 +62,10 @@
                     <a href="https://adityavijayraj.medium.com"><li>Blog</li></a>
                 </ul>
             </div>
+            <span id="navbg"></span>
         </nav>
     
+
     <!-- landing page -->
 
         <div class="landingpage" id="landingpage">
@@ -68,6 +80,7 @@
             
         </div>
        
+
     <!-- about me -->
 
         <div class="aboutme" id="aboutme">
@@ -91,6 +104,7 @@
             <div class="verticalline" id="vl2"><img src="vector assets\whitevbar.png" alt=""></div>
         </div>
 
+
     <!-- services -->
 
         <div class="services" id="services">
@@ -113,6 +127,7 @@
             <div class="verticalline" id="vl3"><img src="vector assets\redvbar.png" alt=""></div>
         </div>
 
+
     <!-- portfolio -->
 
         <div class="portfolio" id="portfolio">
@@ -121,7 +136,7 @@
             <h2 class="subheading" id="portfoliosub">PORTFOLIO</h2>
             <!-- project 1 -->
             <div class="project1">
-                <a href="portfolio_pdf\aditya vijayraj logo presentation.pdf"><img src="images\av logo mockup.jpg" alt="loading" class="projectimg"></a>
+                <a href="project1.html"><img src="images\av logo mockup.jpg" alt="loading" class="projectimg"></a>
             </div>
             <!-- project 2 -->
             <div class="project2">
@@ -153,6 +168,7 @@
             <!-- verticalline -->
             <div class="verticalline" id="vl4"><img src="vector assets\whitevbar.png" alt=""></div>
         </div>
+
 
     <!-- contacts -->
 
@@ -189,6 +205,7 @@
             </div>
         </div>
         
+
     <!-- footer -->
         <div class="footer">
             <footer>

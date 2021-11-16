@@ -550,33 +550,6 @@ nav{
     
 }
 
-.titles{
-    opacity: 0%;
-    font-size: 1vw;
-    letter-spacing:0.1vw ;
-    line-height:3.5vh ;
-    color: var(--white);
-    pointer-events: none;
-}
-
-.prodescription{
-    font-size: 0.9vw;
-    letter-spacing:0.1vw ;
-    line-height:3vh ;
-    color: var(--grey);
-}
-
-
-.projectimg:hover + .titles{
-    padding: 10px;
-    background-color: var(--bluebglight);
-    border: 2px solid var(--accentred);
-    border-top: none;
-    opacity: 100%;
-    transform: translateY(-17.4vh) scale(0.85);
-    transition-duration: 0.4s;
-}
-
 .project1{ grid-column-start:2 ; grid-row-start:5 ; margin: auto; }
 .project2{ grid-column-start:3 ; grid-row-start:5 ; margin: auto; }
 .project3{ grid-column-start:2 ; grid-row-start:6 ; margin: auto; }
@@ -715,47 +688,27 @@ footer{
     .portfolio,
     .contacts{
         grid-template-columns: 10vw 80vw 10vw;
-            border-bottom: 1px  solid var(--grey);
-    }
-
-
-/*         testting */
-    .services,
-    .portfolio,
-    .contacts{
-        display:none;
     }
 
     .heading{
-        font-size: 4.2vw; 
-        letter-spacing:0.3vw;
+        font-size: 4.7vw; 
     }
 
     .subheading{
-        font-size:1.2vw ;
-        font-weight: lighter;
-        letter-spacing:0.5vw;
-        color: var(--grey);
+        font-size:3.8vw ;
     }
 
     .subtitles{
-        font-size:1vw ;
-        letter-spacing:0.4vw ;
-        color: var(--grey);
+        font-size:3vw ;
     }
 
     .bodytext{
         font-size: 3vw;
-        letter-spacing:0.1vw ;
-        line-height:2.6vh ;
-        color: var(--grey);
+        line-height:2.6vh;
     }
 
     .button a{
-        font-size:1vw ;
-        letter-spacing:0.3vw;
-        padding: 5px 20px;
-        border-radius: 10px;    
+        font-size:3vw ;  
     }
 
     .socialicons img{
@@ -764,11 +717,11 @@ footer{
     }
 
     .verticalline{
-        z-index: 100;
         display:none;
     }
 
-/* navbar */
+
+    /* navbar */
      
     #navlogo{
         top: 1.7vh;
@@ -862,7 +815,7 @@ footer{
         transform: none;
     }
 
-/* landing page */
+    /* landing page */
 
     .landingpage{
         grid-template-rows: 35vh 4vh 11vh 11vh 4vh 35vh ;
@@ -903,15 +856,10 @@ footer{
         margin-left:2px;
     }
 
-    #line1,
-    #line3{
-        color: var(--grey);
-    }
 
-/* about page */
+    /* about page */
 
     .aboutme{
-        grid-area: aboutme;
         grid-template-columns: 20vw 70vw 10vw;
         grid-template-rows: 10vh 40vh 5vh 35vh 10vh;
     }
@@ -920,22 +868,22 @@ footer{
         grid-row-start: 3;
         grid-row-end:5;
         grid-column-start: 2;
-        background-color: var(--accentred);
-        border-radius: 0px 0px 0px 40px;
+        border-radius: 0px 40px 0px 40px;
+        z-index:5;
     }
 
     #aboutmeheading{
         grid-row-start: 3;
         grid-column-start: 2;
         padding: 20px 0px 0px 20px;
+        z-index:6;
     }
 
     #aboutmepara{
         grid-column-start: 2;
         grid-row-start: 4;
         padding: 10px 20px 20px 20px;
-        text-align: justify;
-        color: white;
+        z-index:6;
     }
 
 
@@ -943,8 +891,9 @@ footer{
         grid-column-start: 2;
         grid-row-start: 2;
         width:70vw ;
-        border-radius: 0px 40px 00px 0px;
-        margin:0px
+        border-radius: 0px 40px 0px 40px;
+        margin:0px;
+        z-index:4;
     }
 
     .aboutme .socialicons{
@@ -952,260 +901,135 @@ footer{
         grid-column-start: 1;
     }
 
-
-    #vl2{
-        grid-column-start: 3;
-        grid-row-start: 5;
-        margin: auto;
-    }
-
-    .aboutme .verticalline img{
-        height: 40vh;
-        margin-top: -10vh;
-    }
-
-/* services */
+    /* services */
 
     .services{
-        grid-area: services;
-        grid-template-rows: 10vh 7vh 2vh 24vh 18vh 2vh 24vh 3vh 10vh;
+        grid-template-rows: 10vh 5vh 2vh 20vh 2vh 20vh 2vh 20vh 2vh 2vh 5vh 10vh;
     }
 
     #servicesheading{
-        grid-column-start: 3;
+        grid-column-start: 2;
         grid-row-start: 2;
-        text-align: center;
     }
 
     #servicessub{
-        grid-column-start: 3;
+        grid-column-start: 2;
         grid-row-start: 3;
-        text-align: center;
-    }
-
-    .services .subtitles{
-        grid-row-start:6 ;
-        text-align: center;
     }
 
     .services .serviceicons{
-        height: 40px;
-        grid-row-start: 5;
-        margin: auto;
-        transition-duration: 0.4s;
+        height: 70px;
     }
-
-    .serviceicons:hover{
-        transform: scale(1.1);
-        transition-duration: 0.4s;
-    }
-
-    #icon1,#icontitle1{ grid-column-start: 2;}
-    #icon2,#icontitle2{ grid-column-start: 2;}
+    
+    #icon1,#icontitle1,
+    #icon2,#icontitle2,
     #icon3,#icontitle3{ grid-column-start: 2;}
 
+    #icon1{ grid-row-start:4;}
+    #icon2{ grid-row-start:6;}
+    #icon3{ grid-row-start:8;}
+
+    #icontitle1{ grid-row-start:5;}
+    #icontitle2{ grid-row-start:7;}
+    #icontitle3{ grid-row-start:9;}
+    
+
     .services .button{
-        grid-row-start: 8;
-        grid-column-start: 3;
-        margin: auto;
+        grid-row-start: 11;
+        grid-column-start: 2;
     }
 
-    #vl3{
-        grid-column-start: 1;
-        grid-row-start: 7;
-        margin: auto;
-    }
 
-    .services .verticalline img{
-        height: 41vh;
-        margin-top: 16vh;
-    }
-
-/* portfolio */
+    /* portfolio */
 
     .portfolio{
-        grid-area: portfolio;
-        grid-template-columns: 20vw 30vw 30vw 20vw;
-        grid-template-rows: 10vh 7vh 2vh 15vh 40.4vh 40.4vh 40.4vh 15vh 19.8vh 10vh;
+        grid-template-rows: 10vh 5vh 2vh 4vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 7vh 10vh;
     }
 
-    #portfolioheading{
-        grid-column-start: 2;
-        grid-row-start: 2;
-    }
-
+    #portfolioheading,
     #portfoliosub{
-        grid-column-start: 2;
-        grid-row-start: 3;
+        text-align:center;
     }
 
     .projectimg{
-        height: 40.1vh;
-        width: 30vw;
-        transition-duration: 0.3s;
-        margin: auto;
-        z-index: -98;
+        height: 25vh;
+        width: 80vw;
     }
 
-    .projectimg:hover{
-        transform: scale(0.85);
-        transition-duration: 0.4s;
-        border-radius: 0px 40px 0px 0px;
-        border: 2px solid var(--accentred);
-        
-    }
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6{ grid-column-start:2; margin:auto;}
 
-    .titles{
-        opacity: 0%;
-        font-size: 1vw;
-        letter-spacing:0.1vw ;
-        line-height:3.5vh ;
-        color: var(--white);
-        pointer-events: none;
-    }
+    .project1{ grid-row-start:5 ; }
+    .project2{ grid-row-start:7 ; }
+    .project3{ grid-row-start:9 ; }
+    .project4{ grid-row-start:11 ; }
+    .project5{ grid-row-start:13 ; }
+    .project6{ grid-row-start:15 ; }
 
-    .prodescription{
-        font-size: 0.9vw;
-        letter-spacing:0.1vw ;
-        line-height:3vh ;
-        color: var(--grey);
-    }
+    #seemore,
+    #hireme{ grid-column-start: 2;}
 
+    #seemore{ grid-row-start:17 ; margin-left:10vw;}
+    #hireme{ grid-row-start:17 ; margin-right:10vw;}
 
-    .projectimg:hover + .titles{
-        padding: 10px;
-        background-color: var(--bluebglight);
-        border: 2px solid var(--accentred);
-        border-top: none;
-        opacity: 100%;
-        transform: translateY(-17.4vh) scale(0.85);
-        transition-duration: 0.4s;
-    }
-    
-    .project1{ grid-column-start:2 ; grid-row-start:5 ; margin: auto; }
-    .project2{ grid-column-start:3 ; grid-row-start:5 ; margin: auto; }
-    .project3{ grid-column-start:2 ; grid-row-start:6 ; margin: auto; }
-    .project4{ grid-column-start:3 ; grid-row-start:6 ; margin: auto; }
-    .project5{ grid-column-start:2 ; grid-row-start:7 ; margin: auto; }
-    .project6{ grid-column-start:3 ; grid-row-start:7 ; margin: auto; }
-
-
-
-    .portfolio .button{
-        margin: auto;
-    }
-    #seemore{ grid-column-start: 3;grid-row-start:9 ;}
-    #hireme{ grid-column-start: 2;grid-row-start:9 ;}
-
-    #vl4{
-        grid-column-start: 4;
-        grid-row-start:9 ;
-        margin: auto;
-    }
-
-    .portfolio .verticalline img{
-        height: 28vh;
-        margin-top: 15vh;
-    }
-
-/* contacts */
+  
+    /* contacts */
 
     .contacts{
-        grid-area: contacts;
-        grid-template-columns: 20vw 30vw 30vw 20vw;
-        grid-template-rows: 10vh 7vh 2vh 10vh 51vh 10vh 10vh;
-    }
-
-    #contactheading{
-        grid-row-start: 2;
-        grid-column-start: 2;
-    }
-
-    #contactsub{
-        grid-row-start: 3;
-        grid-column-start: 2;
+        grid-template-rows: 10vh 5vh 2vh 53vh 20vh  10vh;
     }
 
     form{
-        grid-row-start: 5;
-        grid-column-start:2 ;
-        
+        grid-row-start: 4;     
     }
 
     form #name,
     form #phoneno,
     form #email,
-    form #message
-    {
-        background-color: transparent;
-        width: 30vw;
-        padding: 10px;
-        padding-left: 0px;
-        border: none;
-        border-bottom: 1px solid var(--grey);
-        margin-bottom: 6vh;
-        font-size: 1vw;
-        letter-spacing: 0.1vw;
-        font-weight: bolder;
-        font-family:'Yanone Kaffeesatz', sans-serif ;
-        color: white;
-    }
-
     form #message{
-        color: var(--grey);
-        font-family:'Yanone Kaffeesatz', sans-serif ;
-        height: 19vh;
-        color: white;
+        width: 80vw;
+        margin-bottom: 3vh;
+        font-size: 3vw;
     }
 
     form button{
-        font-family:'Yanone Kaffeesatz', sans-serif ;
-        font-size:1vw ;
-        letter-spacing:0.3vw;
-        color: white;
-        background-color: var(--accentreddark);
-        padding: 5px 20px;
-        border: none;
-        border-radius: 10px;
-        transition-duration: 0.5s;
-    }
-
-    form button:hover{
-        background-color: var(--accentred);
-        transition-duration: 0.5s;
+        font-size:3vw ;
     }
 
     #qrcode{
-        height: 235px;
-        padding-bottom: 30px;
-        margin: auto;
+        display:none;
     }
 
     .contactdetails{
-        grid-column-start: 3;
-        grid-row-start: 5;
-        margin: auto;
-        padding: 50px;
-        background-color: var(--accentred);
-        letter-spacing: 0.1vw;
-        border-radius: 0px 40px 0px 40px;
+        grid-column-start: 2;
+        font-size:4vw;
+        margin-left:0;
+        padding: 35px 25px;
+        height:20vh;
+        width:60vw;
     }
 
     .contacts .socialicons{
         grid-row-start:5 ;
-        grid-row-end: 8;
-        grid-column-start: 4;
+        grid-row-end:5;
+        grid-column-start: 2;
+        margin-right:10px;
     }
 
-/* footer */
+    .contacts .socialicons img{
+        height:15px;
+        margin-top:8px;
+    }
+
+    /* footer */
 
     footer{
-        grid-area: footer;
-        font-size: 0.8vw;
-        letter-spacing: 0.4vw;
-        font-weight: lighter;
-        color:var(--grey);
-        margin-top: 4vh;
+        font-size: 2vw;
+        margin-top: 5vh;
         text-align: center;
     }
 }

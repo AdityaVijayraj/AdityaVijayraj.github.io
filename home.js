@@ -9,12 +9,3 @@ var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
             document.write('<meta name="viewport" content="width=device-width,height=' + window.innerHeight + ', initial-scale=1.0">');
         }
 
-// collapse navbar when link is clicked
-let toggleButton = document.querySelector("#menuToggle input");
-let navMenu = document.querySelectorAll("#menu a");
-function clickNavbar() {
-  toggleButton.click();
-}
-for (let i = 0; i < navMenu.length; i++) {
-  navMenu[i].addEventListener("click", clickNavbar);
-}

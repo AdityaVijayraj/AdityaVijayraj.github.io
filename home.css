@@ -32,7 +32,7 @@ scrollbar-width: none;
 --bluebglight: #232734;
 --accentredtransparent:#f6414100;
 --accentred: #f64142;
---accentreddark:#9d1c1c;
+--accentreddark:#f6414197;
 --grey: #999;
 --white: #ffffff;
 --facebook:#4267b2;
@@ -51,7 +51,7 @@ body{
     color: white;
     display: grid;
     grid-template-columns:100vw;
-    grid-template-rows: 100vh 100vh 100vh 200vh 100vh 10vh;
+    grid-template-rows: 100vh 100vh 100vh 170.2vh 100vh 10vh;
     grid-template-areas: 
     'landingpage '
     'aboutme     '
@@ -539,7 +539,7 @@ nav{
 .portfolio{
     grid-area: portfolio;
     grid-template-columns: 20vw 30vw 30vw 20vw;
-    grid-template-rows: 10vh 7vh 2vh 15vh 40.4vh 40.4vh 40.4vh 15vh 19.8vh 10vh;
+    grid-template-rows: 10vh 7vh 2vh 10vh 40.4vh 40.4vh 40.4vh 5vh 5vh 10vh;
 }
 
 #portfolioheading{
@@ -589,7 +589,7 @@ nav{
 
 .portfolio .verticalline img{
     height: 28vh;
-    margin-top: 15vh;
+    margin-top: 1vh;
 }
 
 
@@ -700,6 +700,9 @@ footer{
 /* responsive for mobile screen */
 
 @media screen and (max-width : 576px){
+    body{
+        grid-template-rows: 100vh 100vh 100vh 200vh 100vh 10vh;
+    }
     .landingpage,
     .aboutme,
     .services,

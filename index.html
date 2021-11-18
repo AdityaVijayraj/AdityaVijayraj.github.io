@@ -7,24 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <!-- main style sheet -->
+    <!-- css file -->
     <link rel="stylesheet" href="home.css">
 
-    <!-- javascript for loading animation -->
+    <!-- loading animation -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
-        $(window).on('load', function () {
-            $(".loader-wrapper").fadeOut("fast");
-        });
-    </script>
-
-    <!-- javascript for keeping vertical height constant on phones when using virtual keyboards -->
-    <script type="text/javascript">
-        var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
-        if (isAndroid) {
-            document.write('<meta name="viewport" content="width=device-width,height=' + window.innerHeight + ', initial-scale=1.0">');
-        }
-    </script>
 
     <!-- custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -184,7 +171,7 @@
         </div>
         <!-- button -->
         <div class="button" id="seemore">
-            <a href="">See more</a>
+            <a href="portfolio.html">See more</a>
         </div>
         <div class="button" id="hireme">
             <a href="#contacts">Let's go</a>
@@ -244,6 +231,8 @@
     </div>
 
 </body>
-<script src="./scripts.js"></script>
+
+<!-- js file -->
+<script src="home.js"></script>
 
 </html>

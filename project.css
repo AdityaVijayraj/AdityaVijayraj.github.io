@@ -1,0 +1,35 @@
+body{
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 15vh auto 10vh 10vh;
+    grid-template-areas:
+    'header      '
+    'display     '
+    'gap         '
+    'footer      ';
+}
+
+#header{
+    grid-area: header;
+}
+
+.displayimg{
+    grid-area: display;
+    display: grid;
+}
+
+.displayimg img{
+    grid-row-start: auto;
+    grid-column-start: 2;
+    width: 60vw;
+    margin-left: 20vw;
+}
+
+#gap{
+    grid-area: gap;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

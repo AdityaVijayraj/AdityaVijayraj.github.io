@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="home.css">
+    <!-- general css file -->
+    <link rel="stylesheet" href="project.css">
+
+    <!-- loading animation -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- js file -->
+    <script src="..\home.js"></script>
+
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <!-- loading animation -->
+
+    <div class="loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+
+
+    <!-- navbar -->
+
+    <nav id="navbar">
+        <!-- navbar logo -->
+        <a href="#landingpage"><img src="vector assets\main logo.png" alt="loading" id='navlogo'></a>
+        <!-- hamberger menu -->
+        <div id="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="index.html #landingpage">
+                    <li>Home</li>
+                </a>
+                <a href="index.html #aboutme">
+                    <li>About</li>
+                </a>
+                <a href="index.html #services">
+                    <li>Services</li>
+                </a>
+                <a href="index.html #portfolio">
+                    <li>Portfolio</li>
+                </a>
+                <a href="index.html #contacts">
+                    <li>Contact</li>
+                </a>
+                <a href="https://adityavijayraj.medium.com">
+                    <li>Blog</li>
+                </a>
+            </ul>
+        </div>
+        <span id="navbg"></span>
+    </nav>
+
+    <span id="header"></span>
+
+    <!-- display photos -->
+    <div class="displayimg">
+        <img src="project images\personal_branding\1.png" alt="">
+        <img src="project images\personal_branding\2.png" alt="">
+        <img src="project images\personal_branding\3.png" alt="">
+        <img src="project images\personal_branding\4.png" alt="">
+        <img src="project images\personal_branding\5.png" alt="">
+        <img src="project images\personal_branding\6.png" alt="">
+        <img src="project images\personal_branding\7.png" alt="">
+        <img src="project images\personal_branding\8.png" alt="">
+    </div>
+
+    <span id="gap"></span>
+
+    <!-- footer -->
+    <div class="footer">
+        <footer>
+            <h4>Copyright &copy; Aditya Vijayraj 2021</h4>
+        </footer>
+        <br>
+    </div>
+
+</body>
+
+<!-- javascript for closing hamburger menu -->
+<script>
+    let navMenu = document.querySelectorAll("#menu a");
+    let toggleButton = document.querySelector("#menuToggle input");
+        function clickNavbar() {
+          toggleButton.click();
+        }
+        for (let i = 0; i < navMenu.length; i++) {
+          navMenu[i].addEventListener("click", clickNavbar);
+        }
+</script>
+
+</html>

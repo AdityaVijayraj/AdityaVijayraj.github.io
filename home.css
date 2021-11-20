@@ -362,23 +362,13 @@ nav{
     grid-template-rows: 41vh 4vh 10vh 4vh 41vh ;
 }
 
-#landingbg{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 6;
-    width:30vw;
-    margin: auto;
-    z-index: -99;
-    opacity: 30%;
-}
-
 #line1{
     font-size: 1.1vw;
     letter-spacing: 0.8vw;
     grid-column-start: 2;
     grid-row-start: 2;
     margin-left: 2.9vw;
+    animation: line 2s ease;
 }
 
 #line2{
@@ -389,6 +379,7 @@ nav{
     grid-column-end: 5;
     grid-row-start: 3;
     margin: auto;
+    animation: line 3s ease;
 }
 
 #line3{
@@ -398,11 +389,47 @@ nav{
     grid-column-end: 5;
     grid-row-start: 4;
     margin: auto;
+    animation:line 4s ease;
 }
 
 #line1,
 #line3{
     color: var(--grey);
+}
+
+@keyframes line{
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+#landingbg{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    width:30vw;
+    margin: auto;
+    z-index: -99;
+    opacity: 30%;
+    animation: landingbg 4s ease;
+}
+
+@keyframes landingbg{
+    0%{
+        transform: translate(0,100vh);
+        opacity: 0%;
+    }
+
+    100%{
+        transform: translate(0,0);
+        opacity: 30%;
+    }
+
 }
 
 #vl1{

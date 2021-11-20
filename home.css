@@ -368,7 +368,7 @@ nav{
     grid-column-start: 2;
     grid-row-start: 2;
     margin-left: 2.9vw;
-    animation: line 2s ease;
+    animation: line 1s ease;
 }
 
 #line2{
@@ -379,7 +379,7 @@ nav{
     grid-column-end: 5;
     grid-row-start: 3;
     margin: auto;
-    animation: line 3s ease;
+    animation: line 1.5s ease;
 }
 
 #line3{
@@ -389,7 +389,7 @@ nav{
     grid-column-end: 5;
     grid-row-start: 4;
     margin: auto;
-    animation:line 4s ease;
+    animation:line 2s ease;
 }
 
 #line1,
@@ -418,7 +418,7 @@ nav{
     margin: auto;
     z-index: -99;
     opacity: 30%;
-    animation: landingbg 4s ease;
+    animation: landingbg 2.5s ease;
 }
 
 @keyframes landingbg{
@@ -832,6 +832,14 @@ footer{
         margin-bottom: 4px;
     }
         
+    #menuToggle input:checked ~ span{
+        transform: rotate(45deg) translate(-1.8px, -1px);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2){
+        transform: rotate(-45deg) translate(0, -1.8px);
+    }
+
     #menu{
         position: absolute;
         width: 30vw;

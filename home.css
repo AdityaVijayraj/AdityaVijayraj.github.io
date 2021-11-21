@@ -625,8 +625,12 @@ nav{
 .portfolio .button{
     margin: auto;
 }
-#seemore{ grid-column-start: 3;grid-row-start:9 ;}
-#hireme{ grid-column-start: 2;grid-row-start:9 ;}
+
+#hireme{ 
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:9;
+    margin: auto;}
 
 #vl4{
     grid-column-start: 4;
@@ -1006,7 +1010,7 @@ footer{
     }
 
     .projects:hover .projecttitle{
-        opacity: 0%;
+        opacity: 100%;
     }
 
     .project1,
@@ -1023,13 +1027,14 @@ footer{
     .project5{ grid-row-start:13 ; }
     .project6{ grid-row-start:15 ; }
 
-    #seemore,
-    #hireme{ grid-column-start: 2;}
 
-    #seemore{ grid-row-start:17 ; margin-left:10vw;}
-    #hireme{ grid-row-start:17 ; margin-right:10vw;}
+    #hireme{ 
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start:17;
+    }
 
-  
+
     /* contacts */
 
     .contacts{

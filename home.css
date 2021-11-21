@@ -1008,6 +1008,12 @@ footer{
         border-radius: 0;
         border:none;
     }
+    
+    .projecttitle{
+        -webkit-transform: translate(-0%, -12.5vh);
+        -ms-transform: translate(-0%, -12.5vh);
+        transform: translate(-0%, -12.5vh);
+    }
 
     .projects:hover .projecttitle{
         opacity: 100%;

@@ -417,19 +417,19 @@ nav{
     width:30vw;
     margin: auto;
     z-index: -99;
-    opacity: 30%;
-    animation: landingbg 2.5s ease;
+    opacity: 40%;
+    animation: landingbg 2s ease;
 }
 
 @keyframes landingbg{
     0%{
-        transform: translate(0,100vh);
+        transform: translate(200vw,0);
         opacity: 0%;
     }
 
     100%{
         transform: translate(0,0);
-        opacity: 30%;
+        opacity: 40%;
     }
 
 }

@@ -28,8 +28,8 @@ scrollbar-width: none;
 /* primary colours */
 
 :root{
---bluebg: #202430;
---bluebglight: #232734;
+--bluebg: #1b1b1b;
+--bluebglight: #1d1d1d;
 --accentredtransparent:#f6414100;
 --accentred: #f64142;
 --accentreddark:#f6414197;

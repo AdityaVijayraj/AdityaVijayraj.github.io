@@ -51,7 +51,7 @@ body{
     color: white;
     display: grid;
     grid-template-columns:100vw;
-    grid-template-rows: 100vh 100vh 100vh 170.2vh 100vh 10vh;
+    grid-template-rows: repeat(5,auto) 10vh;
     grid-template-areas: 
     'landingpage '
     'aboutme     '
@@ -568,7 +568,7 @@ nav{
 .portfolio{
     grid-area: portfolio;
     grid-template-columns: 20vw 30vw 30vw 20vw;
-    grid-template-rows: 10vh 7vh 2vh 10vh 40.4vh 40.4vh 40.4vh 5vh 5vh 10vh;
+    grid-template-rows: 10vh 7vh 2vh 10vh auto auto auto 5vh 5vh 10vh;
 }
 
 #portfolioheading{
@@ -582,11 +582,12 @@ nav{
 }
 
 .projectimg{
-    height: 40.1vh;
+    height: auto;
     width: 30vw;
     transition-duration: 0.3s;
     margin: auto;
     z-index: -98;
+    margin-bottom:-3vh;
 }
 
 .projecttitle{
@@ -614,8 +615,6 @@ nav{
 }
 
 .project1{ grid-column-start:2 ; grid-row-start:5 ; margin: auto; }
-
-
 .project2{ grid-column-start:3 ; grid-row-start:5 ; margin: auto; }
 .project3{ grid-column-start:2 ; grid-row-start:6 ; margin: auto; }
 .project4{ grid-column-start:3 ; grid-row-start:6 ; margin: auto; }
@@ -752,7 +751,7 @@ footer{
 
 @media screen and (max-width : 576px){
     body{
-        grid-template-rows: 100vh 100vh 100vh 200vh 100vh 10vh;
+        grid-template-rows: repeat(5,auto) 10vh;
     }
     .landingpage,
     .aboutme,
@@ -990,7 +989,7 @@ footer{
     /* portfolio */
 
     .portfolio{
-        grid-template-rows: 10vh 5vh 2vh 4vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 7vh 10vh;
+        grid-template-rows: 10vh 5vh 2vh 4vh auto 2vh auto 2vh auto 2vh auto 2vh auto 2vh auto 2vh 7vh 10vh;
     }
 
     #portfolioheading,
@@ -999,7 +998,7 @@ footer{
     }
 
     .projectimg{
-        height: 25vh;
+        height: auto;
         width: 80vw;
     }
 
@@ -1008,7 +1007,7 @@ footer{
         border-radius: 0;
         border:none;
     }
-    
+
     .projecttitle{
         -webkit-transform: translate(-0%, -12.5vh);
         -ms-transform: translate(-0%, -12.5vh);

@@ -597,7 +597,7 @@ nav{
     transition-duration: 0.3s;
     -webkit-transform: translate(-0%, -20.05vh);
     -ms-transform: translate(-0%, -20.05vh);
-    transform: translate(-0%, -20.05vh);
+    transform: translate(-0%, -18.5vh);
     text-align: center;
 }
 

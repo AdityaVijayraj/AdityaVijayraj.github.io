@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- loading animation -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- js file -->
+    <script src="index.js"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="vector_assets\web favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- loading animation -->
+
+    <div class="loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+
+    <div class="container">
+        <!-- landing page -->
+        <div class="sections landingpage" id="landingpage">
+            <p class="navbar">
+                <a href="#works">Portfolio</a>
+                <a href="#contacts" class="navlink">Contacts</a>
+                <a href="about.html">About</a>
+                <!-- <a href="">Blog</a>
+                <a href="">Downloads</a> -->
+            </p>
+            
+            
+            <div class="right1">
+                <div class="moverright1" >
+                    <img src="vector_assets\right1.png" alt="">
+                </div>
+            </div>
+            <div class="right2">
+                <div class="moverright2" >
+                    <img src="vector_assets\right2.png" alt="">
+                </div>
+            </div>
+            <div class="left1">
+                <div class="moverleft1" >
+                    <img src="vector_assets\left1.png" alt="">
+                </div>
+            </div>
+            <div class="left2">
+                <div class="moverleft2" >
+                    <img src="vector_assets\left2.png" alt="">
+                </div>
+            </div>
+            
+
+            <img src="images/vectorportrait.png" id="maindisplayimg">
+
+        </div>
+
+        <!-- gap -->
+        <div class="gap1"><span></span></div>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <ul>
+                <!-- logo image -->
+                <li id="main_logo_display">
+                    <a href="#landingpage"><img src="vector_assets\main logo.png" alt="" id="mainlogo"> </a>
+                </li>
+                <!-- links -->
+                <ul id="links_display">
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="">Blog</a></li>
+                    <li><a href="">Downloads</a></li> -->
+                </ul>
+                <!-- social media links -->
+                <ul id="social_display">
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCQBVG_fOJ4bqJJEqcifD61Q" target="_blank"><img src="vector_assets\youtube color.png" alt="" class="socialicons" id="youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/adityavijayraj__vjr/" target="_blank"><img src="vector_assets\instagram color.png" alt="" class="socialicons" id="instagram"></a>
+                    </li> 
+                    <li>
+                        <a href="https://www.linkedin.com/in/aditya-vijayraj-397735215/" target="_blank"><img src="vector_assets\linkedin color.png" alt="" class="socialicons" id="linkedin"></a>
+                    </li>
+                </ul>
+            </ul> 
+        </div>
+
+        <!-- works -->
+        <div class="sections works" id="works">
+            <div class="projects one">
+                <a href=""><img src="project_1\project1a.png" alt=""></a>
+            </div>
+            <div class="projecttext onetxt">
+                <h1 class="pronum onenum">01</h1>
+                <div class="pronames">
+                    <h2 class="proname atxt">Edumettle</h2>
+                    <h2 class="proname btxt">Edumettle</h2>
+                    <h2 class="proname ctxt">Edumettle</h2>
+                </div>
+                <p class="proabt">Edumettle is an e-learning platform where you can upgrade your skillset</p>
+            </div>
+
+            <div class="projects two">
+                <a href=""><img src="project_2\project2a.png" alt=""></a>
+            </div>
+            <div class="projecttext twotxt">
+                <h1 class="pronum twonum">02</h1>
+                <div class="pronames">
+                    <h2 class="proname atxt">Drugs</h2>
+                    <h2 class="proname btxt">Drugs</h2>
+                    <h2 class="proname ctxt">Drugs</h2>
+                </div>
+                <p class="proabt">Well, its your friendly neighbourhood drug business</p>
+            </div>
+
+            <div class="projects three">
+                <a href=""><img src="project_3\project3a.png" alt=""></a>
+            </div>
+            <div class="projecttext threetxt">
+                <h1 class="pronum threenum">03</h1>
+                <div class="pronames">
+                    <h2 class="proname atxt">T-shirts</h2>
+                    <h2 class="proname btxt">T-shirts</h2>
+                    <h2 class="proname ctxt">T-shirts</h2>
+                </div>
+                <p class="proabt">Well i have also designed some generic t-shirts</p>
+            </div>
+
+        </div>
+
+        <!-- gap -->
+        <div class="gap2"><span></span></div>
+
+        <!-- contacts -->
+        <div class="sections contacts" id="contacts">
+            <h1 id="hashtag">#</h1>
+            <div class="contacttitles">
+                <h2 class="contacttitle onetitle">Get in touch</h2>
+                <h2 class="contacttitle twotitle">Get in touch</h2>
+                <h2 class="contacttitle threetitle">Get in touch</h2>
+            </div>
+            <div class="contactinfo">
+                <p>adityavijayraj2003@gmail.com</p>
+            </div>
+            <form action="https://formspree.io/f/xyylapwg" method="POST">
+                <input type="text" id="name" name="name" placeholder="Name*" required> <br>
+                <input type="text" id="phoneno" name="phoneno" placeholder="Phone no"> <br>
+                <input type="email" id="email" name="email" placeholder="Email*" required> <br>
+                <textarea name="message" id="message" placeholder="Message*" required></textarea> <br>
+                <div class="button">
+                    <button type="submit" value="Submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
